@@ -14,6 +14,7 @@ export default {
         coffee: resolve(__dirname, "src/pages/coffeeSmoke.html"),
         fluid: resolve(__dirname, "src/pages/fluidSphere.html"),
         modMaterials: resolve(__dirname, "src/pages/modifyMaterials.html"),
+        hologram: resolve(__dirname, "src/pages/hologram.html"),
       },
     },
   },
