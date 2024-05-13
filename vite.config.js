@@ -13,7 +13,7 @@ export default {
         main: resolve(__dirname, "src/index.html"),
         coffee: resolve(__dirname, "src/pages/coffeeSmoke.html"),
         fluid: resolve(__dirname, "src/pages/fluidSphere.html"),
-        holographic: resolve(__dirname, "src/pages/hologram.html"),
+        holo: resolve(__dirname, "src/pages/holo.html"),
         modMaterials: resolve(__dirname, "src/pages/modifyMaterials.html"),
       },
     },
