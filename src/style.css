@@ -10,17 +10,11 @@ body {
   padding: 0;
 }
 
-.main-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
 .webgl {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -1;
   outline: none;
 }
 

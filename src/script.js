@@ -224,7 +224,7 @@ const hitplane = new THREE.Mesh(
   new THREE.PlaneGeometry(),
   new THREE.MeshBasicMaterial()
 );
-hitplane.scale.setScalar(10);
+hitplane.scale.setScalar(20);
 hitplane.rotation.x = -Math.PI / 2;
 hitplane.updateMatrix();
 hitplane.updateMatrixWorld();
