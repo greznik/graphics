@@ -42,7 +42,6 @@ scene.add(dirLight2);
 
 // Loaders
 const textureLoader = new THREE.TextureLoader();
-const cubeTextureLoader = new THREE.CubeTextureLoader();
 
 /**
  * Sizes
@@ -82,11 +81,11 @@ const camera = new THREE.OrthographicCamera(
   sizes.cameraSize,
   -sizes.cameraSize,
   0.1,
-  1000
+  100
 );
-camera.position.z = 40;
-camera.position.y = 40;
-camera.position.x = 40;
+camera.position.z = 10;
+camera.position.y = 10;
+camera.position.x = 10;
 camera.lookAt(new THREE.Vector3(0, 0, 0));
 scene.add(camera);
 
@@ -117,7 +116,7 @@ const uniforms = {
   uPos0: new THREE.Uniform(new THREE.Vector2()),
   uPos1: new THREE.Uniform(new THREE.Vector2()),
   uAnimate: new THREE.Uniform(0),
-  uConfig: new THREE.Uniform(new THREE.Vector4(0, 0, 1, 0)),
+  uConfig: new THREE.Uniform(new THREE.Vector4(0, 0, 1)),
 };
 
 const geometry = new RoundedBoxGeometry(
@@ -127,7 +126,7 @@ const geometry = new RoundedBoxGeometry(
 );
 
 const material = new THREE.MeshPhysicalMaterial({
-  color: "#333",
+  color: "#666",
   metalness: 0.5,
   roughness: 0.0,
 });
