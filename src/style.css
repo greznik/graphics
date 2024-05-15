@@ -28,7 +28,6 @@ h2 {
 h1 span,
 h2 span {
   color: #fc3;
-  font-weight: 700;
 }
 
 .wrapper {
@@ -47,17 +46,19 @@ h2 span {
 }
 
 .navigation__item {
-  margin: 0.25em 2.75em;
+  margin: 0.25em 1em;
 }
 
 .navigation__item span {
   display: block;
   font-size: small;
-  color: #666;
+  font-style: italic;
+  font-weight: 100;
+  color: #fff;
 }
 
 .navigation__link {
-  color: #999;
+  color: #fff;
   text-decoration: none;
 }
 
