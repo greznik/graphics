@@ -4,7 +4,6 @@ import { RoundedBoxGeometry } from "three/examples/jsm/geometries/RoundedBoxGeom
 import gsap from "gsap";
 import vertexHead from "./shaders/vertex_head.glsl";
 import vertexProject from "./shaders/vertex_project.glsl";
-// import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
 /**
  * Base
@@ -127,7 +126,7 @@ const geometry = new RoundedBoxGeometry(
 
 const material = new THREE.MeshPhysicalMaterial({
   color: "#666",
-  metalness: 0.5,
+  metalness: 0.0,
   roughness: 0.0,
 });
 const mesh = new THREE.InstancedMesh(
@@ -208,8 +207,7 @@ mesh.customDepthMaterial.onBeforeCompile = (shader) => {
 mesh.customDepthMaterial.depthPacking = THREE.RGBADepthPacking;
 scene.add(mesh);
 
-const t1 = gsap.timeline();
-t1.to(
+gsap.to(
   uniforms.uAnimate,
   {
     value: 1,
@@ -219,7 +217,7 @@ t1.to(
   0.0
 );
 
-// Events
+// Raycaster
 const hitplane = new THREE.Mesh(
   new THREE.PlaneGeometry(),
   new THREE.MeshBasicMaterial()

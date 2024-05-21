@@ -16,6 +16,7 @@ export default {
         holo: resolve(__dirname, "src/pages/hologram.html"),
         modMaterials: resolve(__dirname, "src/pages/modifyMaterials.html"),
         fireworks: resolve(__dirname, "src/pages/fireworks.html"),
+        sea: resolve(__dirname, "src/pages/seaShading.html"),
       },
     },
   },
