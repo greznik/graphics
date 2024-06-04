@@ -5,7 +5,7 @@ uniform float uProgress;
 attribute float aSize;
 attribute float aMultiplierTime;
 
-#include ../common/remap.glsl
+#include ../includes/remap.glsl
 
 void main() {
     vec3 newPosition = position;

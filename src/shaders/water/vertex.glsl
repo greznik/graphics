@@ -13,7 +13,7 @@ varying float vElevation;
 varying vec3 vNormal;
 varying vec3 vPosition;
 
-#include ../common/perlinClassic3D;
+#include ../includes/perlinClassic3D;
 
 float waveElevation(vec3 position) {
     float elevation = sin(position.x * uBigWavesFrequency.x + uTime * uBigWavesSpeed) *

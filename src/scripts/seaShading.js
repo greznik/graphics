@@ -26,8 +26,8 @@ waterGeometry.deleteAttribute("normal");
 waterGeometry.deleteAttribute("uv");
 
 // Colors
-debugObject.depthColor = "#1463ff";
-debugObject.surfaceColor = "#00fbff";
+debugObject.depthColor = "#003a57";
+debugObject.surfaceColor = "#00ffff";
 
 gui.addColor(debugObject, "depthColor").onChange(() => {
   waterMaterial.uniforms.uDepthColor.value.set(debugObject.depthColor);
@@ -48,15 +48,15 @@ const waterMaterial = new THREE.ShaderMaterial({
     uBigWavesSpeed: new THREE.Uniform(0.75),
 
     uSmallWavesElevation: new THREE.Uniform(0.15),
-    uSmallWavesFrequency: new THREE.Uniform(3),
+    uSmallWavesFrequency: new THREE.Uniform(2),
     uSmallWavesSpeed: new THREE.Uniform(0.2),
     uSmallIterations: new THREE.Uniform(4),
 
     uDepthColor: new THREE.Uniform(new THREE.Color(debugObject.depthColor)),
     uSurfaceColor: new THREE.Uniform(new THREE.Color(debugObject.surfaceColor)),
     uColorOffset: new THREE.Uniform(0.3),
-    uColorMultiplier: new THREE.Uniform(1),
-    uShiftNormals: new THREE.Uniform(1.1),
+    uColorMultiplier: new THREE.Uniform(0.75),
+    uShiftNormals: new THREE.Uniform(0.1),
   },
 });
 

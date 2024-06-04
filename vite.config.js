@@ -17,6 +17,7 @@ export default {
         modMaterials: resolve(__dirname, "src/pages/modifyMaterials.html"),
         fireworks: resolve(__dirname, "src/pages/fireworks.html"),
         sea: resolve(__dirname, "src/pages/seaShading.html"),
+        earth: resolve(__dirname, "src/pages/earth.html"),
       },
     },
   },
